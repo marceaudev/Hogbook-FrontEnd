@@ -1,13 +1,20 @@
 @import './base.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.min.css';
 
 :root {
   --main-black: #111111;
   --main-white: #f2f2f2;
   --main-purple: #86172a;
   --main-gold: #feedd1;
-  --main-grey: #bdbdbd;
+  --main-grey: #e4e4e4;
   --grey-darker: #929292;
+  --header-height: 60px;
+  --main-shadow: 0px 0px 5px var(--main-grey);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -16,4 +23,9 @@ body {
 
 button {
   font-family: inherit;
+}
+
+.container {
+  width: 1050px;
+  margin: 0 auto;
 }
