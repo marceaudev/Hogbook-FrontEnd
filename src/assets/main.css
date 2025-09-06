@@ -11,6 +11,7 @@
   --grey-darker: #929292;
   --header-height: 60px;
   --main-shadow: 0px 0px 5px var(--main-grey);
+  --shadow-right: 5px 0px 5px var(--main-grey);
 }
 
 * {

@@ -22,9 +22,7 @@ import { RouterLink } from 'vue-router'
         </div>
       </div>
       <nav class="navBloc">
-        <RouterLink :to="{ name: 'home' }"
-          >Connexion | Inscription <i class="fa-solid fa-user"></i
-        ></RouterLink>
+        <RouterLink :to="{ name: 'home' }">Connexion <i class="fa-solid fa-user"></i></RouterLink>
       </nav>
     </div>
   </header>
@@ -32,6 +30,11 @@ import { RouterLink } from 'vue-router'
 
 <style scoped>
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   width: 100%;
   display: flex;
   justify-content: center;
