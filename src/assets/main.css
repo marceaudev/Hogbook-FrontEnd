@@ -1,1 +1,19 @@
 @import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --main-black: #111111;
+  --main-white: #f2f2f2;
+  --main-purple: #86172a;
+  --main-gold: #feedd1;
+  --main-grey: #bdbdbd;
+  --grey-darker: #929292;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
