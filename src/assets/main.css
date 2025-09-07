@@ -9,6 +9,8 @@
   --main-gold: #feedd1;
   --main-grey: #e4e4e4;
   --grey-darker: #929292;
+  --main-red: rgb(189, 47, 47);
+  --main-green: #2fc454;
   --header-height: 60px;
   --footer-height: 150px;
   --main-shadow: 0px 0px 5px var(--main-grey);

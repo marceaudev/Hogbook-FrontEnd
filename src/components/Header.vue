@@ -1,5 +1,10 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import LogoutBtn from './LogoutBtn.vue'
+
+function isAuthenticated() {
+  return !!localStorage.getItem('token')
+}
 </script>
 
 <template>
@@ -22,7 +27,10 @@ import { RouterLink } from 'vue-router'
         </div>
       </div>
       <nav class="navBloc">
-        <RouterLink :to="{ name: 'home' }">Connexion <i class="fa-solid fa-user"></i></RouterLink>
+        <RouterLink :to="{ name: 'login' }" v-if="!isAuthenticated()"
+          ><i class="fa-solid fa-user"></i>Connexion</RouterLink
+        >
+        <LogoutBtn />
       </nav>
     </div>
   </header>
@@ -114,6 +122,8 @@ header {
 }
 
 .navBloc a {
+  display: flex;
+  gap: 5px;
   color: var(--main-black);
   text-decoration: none;
   font-size: 14px;

@@ -1,5 +1,10 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import LogoutBtn from './LogoutBtn.vue'
+
+function isAuthenticated() {
+  return !!localStorage.getItem('token')
+}
 </script>
 
 <template>
@@ -7,7 +12,10 @@ import { RouterLink } from 'vue-router'
     <nav>
       <div class="navMenu">
         <RouterLink :to="{ name: 'home' }"><i class="fa-solid fa-house"></i> Accueil</RouterLink>
-        <RouterLink :to="{ name: 'home' }"><i class="fa-solid fa-user"></i> Connexion</RouterLink>
+        <RouterLink :to="{ name: 'login' }" v-if="!isAuthenticated()">
+          <i class="fa-solid fa-user"></i>Connexion</RouterLink
+        >
+        <LogoutBtn />
       </div>
     </nav>
   </div>
