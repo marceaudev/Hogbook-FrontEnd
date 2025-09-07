@@ -40,6 +40,7 @@ header {
   justify-content: center;
   height: var(--header-height);
   box-shadow: var(--main-shadow);
+  background: #fff;
 }
 
 .container {

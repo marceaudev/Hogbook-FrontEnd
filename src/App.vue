@@ -8,16 +8,22 @@ import Footer from './components/Footer.vue'
 <template>
   <Header />
   <LeftMenu />
-  <div class="container">
+  <div class="routerWrapper">
     <RouterView />
   </div>
   <Footer />
 </template>
 
 <style scoped>
-.container {
+.routerWrapper {
   padding-top: calc(var(--header-height) + 35px);
   height: calc(100dvh - var(--footer-height));
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
 }
 </style>
